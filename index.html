@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pawsitive 🐾 반려견 종합 플랫폼</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐾</text></svg>">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- 네비게이션 바 -->
+  <header id="navbar" class="navbar"></header>
+
+  <!-- 메인 앱 컨테이너 -->
+  <main id="app" class="app-container">
+    <div class="page-content">
+      <div style="text-align:center; padding:80px 20px;">
+        <div class="spinner"></div>
+        <p style="margin-top:16px; color:var(--color-text-muted); font-weight:700;">로딩 중... 🐾</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- 장식용 발자국들 -->
+  <div class="paw-decoration">🐾</div>
+  <div class="paw-decoration" style="bottom:auto; top:20%; right:auto; left:5%; font-size:2rem; opacity:0.08; animation-delay:0.5s;">🐾</div>
+  <div class="paw-decoration" style="bottom:40%; right:8%; font-size:2.5rem; opacity:0.06; animation-delay:1s;">🐾</div>
+  <div class="paw-decoration" style="bottom:60%; right:auto; left:8%; font-size:1.8rem; opacity:0.07; animation-delay:1.5s;">🐾</div>
+  <div class="paw-decoration" style="bottom:auto; top:40%; right:3%; font-size:2.2rem; opacity:0.05; animation-delay:2s;">🐾</div>
+
+  <!-- 스크립트 로드 순서: 데이터 → 서비스 → 앱 -->
+  <script src="js/data/breeds.js"></script>
+  <script src="js/data/education.js"></script>
+  <script src="js/services/storage.js"></script>
+  <script src="js/services/authService.js"></script>
+  <script src="js/services/breedService.js"></script>
+  <script src="js/services/educationService.js"></script>
+  <script src="js/services/communityService.js"></script>
+  <script src="js/services/walletService.js"></script>
+  <script src="js/services/matchingService.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
